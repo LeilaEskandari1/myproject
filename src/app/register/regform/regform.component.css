@@ -1,0 +1,16 @@
+.text-error{
+    color: red;
+    margin-left: 5px;
+    border-top: 10px;
+}
+.flabel{
+    display: block;
+    width: 100px;
+    float: right;
+    border: none;
+   
+}
+.fdiv{
+margin-top: 15px;
+
+}
