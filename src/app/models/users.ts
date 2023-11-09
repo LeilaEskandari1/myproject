@@ -1,5 +1,5 @@
-enum Gender{MALE,FAMEL};
 
+import {Gender} from 'src/app/enums/gender';
 export class users{
     
     constructor(

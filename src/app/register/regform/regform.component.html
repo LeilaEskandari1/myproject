@@ -28,11 +28,16 @@
         <p-password type="text" formControlName="confirmPassword"></p-password>
     </div>
     <div class="fdiv">
+        
         <label  class ="flabel" for="">جنسیت:</label>
-      
-        <select name="" id="" pInputText formControlName="gender">
-            <!-- <option *ngFor="let item of persons" [ngValue]=item.id>{{item.lastName}} {{item.firstName}}</option> -->
-        </select>
+        <select  formControlName="gender">
+            <option *ngFor="let gender of gender"
+                    [value]="gender">
+              {{[gender]}}
+            </option>
+          </select>
+
+        
     </div>
     <div class="fdiv">
         <label   class ="flabel"for="">ایمیل:</label>
