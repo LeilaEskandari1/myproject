@@ -31,6 +31,8 @@ rowData = [
 ngOnInit(): void {
   this.regUser$=this.registerservice.regUsers$;
   this.registerservice.regUsers$.subscribe(console.log);
+  this.user=this.registerservice.users;
+  console.log(this.user);
   
 }
 

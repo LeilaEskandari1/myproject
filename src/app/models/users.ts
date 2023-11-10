@@ -3,13 +3,13 @@ import {Gender} from 'src/app/enums/gender';
 export class users{
     
     constructor(
-        public Firstname:string,
-        public Lastname:string,
-       public  Age:number,
-        public Password:string,
-        public ConfirmPassword:string,
+        public firstName:string,
+        public lastName:string,
+       public  age:number,
+        public password:string,
+        public confirmPassword:string,
       public gender: Gender ,
-        public Email:string,
+        public email:string,
         ) {}
       
 }

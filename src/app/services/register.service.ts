@@ -7,7 +7,7 @@ import {users} from 'src/app/models/users';
 })
 export class RegisterService {
 public regUsers$!:Observable<users[]>;
-users:users[]=[];
+public users:users[]=[];
   constructor() { }
   getAll():Observable<users[]>{
     return this.regUsers$;

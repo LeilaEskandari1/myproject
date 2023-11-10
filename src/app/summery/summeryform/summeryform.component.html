@@ -1,13 +1,42 @@
-<div>
-	<div class="product-box">
-   
-  
-	<a *ngFor="let item of regUser$|keyvalue"> {{item.key}}:{{item.value}}</a>
-	  
-	   <hr />
-	  
+<div id="resp-table">
+	<div id="resp-table-header">
+		<div class="table-header-cell">
+			نام
+			</div>
+			<div class="table-header-cell">
+			نام خانوادگی
+			</div>
+			<div class="table-header-cell">
+			سن
+			</div>
+			<div class="table-header-cell">
+			جنسیت
+			</div>
+			<div class="table-header-cell">
+			ایمیل
+			</div>
+	</div>
+	<div id="resp-table-body">
+		<div class="resp-table-row" *ngFor="let item of user">
+			<div class="table-body-cell">
+			{{item.firstName}}
+				</div>
+				<div class="table-body-cell">
+				{{item.lastName}}
+				</div>
+				<div class="table-body-cell">
+					{{item.age}} 
+				</div>
+				<div class="table-body-cell">
+					{{item.gender}}
+				</div>
+				<div class="table-body-cell">
+					{{item.email}}
+				</div>
+		</div>
 	</div>
 </div>
+
 <!-- <div>
 	<ag-grid-angular 
 	style="width: 500px; height: 500px;" 

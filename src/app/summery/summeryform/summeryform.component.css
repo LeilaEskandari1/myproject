@@ -1,28 +1,28 @@
-.product-box {
+#resp-table {
+    width: 50%;
+    display: table;
+    }
    
-    flex-basis: 15%;
-    margin: 2px;
-    padding: 5px;
-    border: 3px #ccc solid;
-    border-radius: 1rem;
-    background-color: azure;
-    display: flex;
-    justify-content: space-between;
-    
-}
-
-.box-link {
-    display: inline-block;
-    padding: 7px 10px;
-   
-   
-    text-decoration: none;
-    margin: 8px;
-}
-
-.box-link:hover {
-   border-color: orangered;
-}
-.product-box:hover {
-    border-color: rgb(255, 0, 157);
- }
+ #resp-table-header{
+        display: table-header-group;
+        background-color:rgb(136, 183, 243);
+        font-weight: bold;
+        font-size: 25px;
+     }
+        .table-header-cell{
+            display: table-cell;
+            padding: 10px;
+            text-align: justify;
+            border-bottom: 1px solid black;
+            }
+            #resp-table-body{
+                display: table-row-group;
+                background-color:azure;
+                }
+                .resp-table-row{
+                    display: table-row;
+                    }
+                    .table-body-cell{
+                        display: table-cell;
+                        }
+                        
