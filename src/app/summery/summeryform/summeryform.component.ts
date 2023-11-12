@@ -13,27 +13,29 @@ export class SummeryformComponent implements OnInit{
   constructor(private registerservice:RegisterService){}
   public regUser$!:Observable<users[]>;
   public user!:users[];
+  public  rowData:any;
   columnDefs: ColDef[] = [
-    { field: 'نام' },
-    { field: 'نامخانوادگی' },
-    { field: 'سن' },
-    { field: 'پسورد' },
-    { field: 'جنسیت' },
-    { field: 'ایمیل' },
+    { field: 'name' },
+    { field: 'family' },
+    { field: 'age' },
+    { field: 'password' },
+    { field: 'gender' },
+    { field: 'email' },
 ];
 
-rowData = [
-  { نام: 'Toyota', نامخانوادگی: 'Celica', سن:35000 },
-  {نام: 'Ford', نامخانوادگی: 'Mondeo', سن: 32000 },
-  {نام: 'Porsche', نامخانوادگی: 'Boxster', سن: 72000 }
-];
+
 
 ngOnInit(): void {
   this.regUser$=this.registerservice.regUsers$;
   this.registerservice.regUsers$.subscribe(console.log);
   this.user=this.registerservice.users;
-  console.log(this.user);
+
+this.rowData=[{
+  name: this.user[0].firstName,family: this.user[0].lastName, age:this.user[0].age ,
+     password:this.user[0].password,gender:this.user[0].gender,email:this.user[0].email}
+    ];
   
+ 
 }
 
 

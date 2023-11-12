@@ -1,48 +1,44 @@
 <form [formGroup]="userForm" (submit)="save()">
     <div class="fdiv">
-        <label  class ="flabel" for="">نام:</label>
+        <label class="flabel" for="">نام:</label>
         <input type="text" pInputText formControlName="firstName">
-        <div *ngIf="this.userForm.controls['firstName'].touched && f['firstName'].invalid"> 
-        
-            <div  class="error" *ngIf="f['firstName'].errors && f['firstName'].errors['required']">نام اجباری است</div> 
-        </div> 
+        <div *ngIf="this.userForm.controls['firstName'].touched && f['firstName'].invalid">
+
+            <div class="error" *ngIf="f['firstName'].errors && f['firstName'].errors['required']">نام اجباری است</div>
+        </div>
         <!-- <div *ngIf="userForm.controls['firstName'].dirty && userForm.controls['firstName'].invalid"> -->
-     
+
         <!-- <span  class="text-error"   *ngIf="userForm.controls['firstName'].errors && userForm.controls['firstName'].errors['maxLength'] "> نام کاربری مورد نیاز است</span> -->
-    
+
     </div>
-    <div  class="fdiv">
-        <label  class ="flabel" for="">نام خانوادگی:</label>
+    <div class="fdiv">
+        <label class="flabel" for="">نام خانوادگی:</label>
         <input type="text" pInputText formControlName="lastName">
     </div>
     <div class="fdiv">
-        <label  class ="flabel" for="">سن:</label>
-        <input type="text" pInputText  formControlName="age">
+        <label class="flabel" for="">سن:</label>
+        <input type="text" pInputText formControlName="age">
     </div>
     <div class="fdiv">
-        <label  class ="flabel" for="">پسورد:</label>
-        <p-password type="text" formControlName="password" ></p-password>
+        <label class="flabel" for="">پسورد:</label>
+        <p-password type="text" formControlName="password"></p-password>
     </div>
     <div class="fdiv">
-        <label   class ="flabel"for="">تکرار پسورد:</label>
+        <label class="flabel" for="">تکرار پسورد:</label>
         <p-password type="text" formControlName="confirmPassword"></p-password>
     </div>
-    <div class="fdiv">
-        
-        <label  class ="flabel" for="">جنسیت:</label>
-        <select  formControlName="gender">
-            <option *ngFor="let gender of gender"
-                    [value]="gender">
-              {{[gender]}}
-            </option>
-          </select>
+    <div class="fdiv" >
 
-        
+        <label class="flabel" for="">جنسیت:</label>
+        <p-dropdown formControlName="gender" [options]="genders"   ></p-dropdown>
+      
+   
     </div>
+    
     <div class="fdiv">
-        <label   class ="flabel"for="">ایمیل:</label>
+        <label class="flabel" for="">ایمیل:</label>
         <input type="text" pInputText formControlName="email">
-    </div >
+    </div>
+
     <p-button type="submit">ذخیره</p-button>
 </form>
-<!-- <p-button (click)="print()">print</p-button> -->

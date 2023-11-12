@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
 import { ButtonModule } from 'primeng/button';
+import { DropdownModule } from 'primeng/dropdown';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { AgGridModule } from 'ag-grid-angular';
 
@@ -16,7 +17,8 @@ import { AgGridModule } from 'ag-grid-angular';
     ReactiveFormsModule, 
   
     InputTextModule,PasswordModule,
-    ButtonModule,AgGridModule
+    ButtonModule,AgGridModule,
+    DropdownModule
   ]
 })
 export class SharedModule { }
