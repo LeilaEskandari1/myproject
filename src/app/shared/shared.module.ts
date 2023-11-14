@@ -7,6 +7,7 @@ import { ButtonModule } from 'primeng/button';
 import { DropdownModule } from 'primeng/dropdown';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { AgGridModule } from 'ag-grid-angular';
+import { CardModule } from 'primeng/card';
 
 @NgModule({
   declarations: [],
@@ -18,7 +19,7 @@ import { AgGridModule } from 'ag-grid-angular';
   
     InputTextModule,PasswordModule,
     ButtonModule,AgGridModule,
-    DropdownModule
+    DropdownModule,CardModule
   ]
 })
 export class SharedModule { }
