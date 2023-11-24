@@ -39,10 +39,13 @@
 </div> -->
 <!-- 
 with ag-gride -->
+<div class="main">
 	 <ag-grid-angular 
-	style="width: vw; height: 200px;" 
+	style="width: 1300px; height: 200px;" 
 	class="ag-theme-alpine"
 	[rowData]="rowData" 
 	[columnDefs]="columnDefs">
+	[localeText]="AG_GRID_LOCALE_FA"
 </ag-grid-angular> 
+<div>
 

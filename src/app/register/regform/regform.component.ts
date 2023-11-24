@@ -51,7 +51,6 @@ export class RegformComponent implements OnInit {
     this.router.navigateByUrl('/summery/summeryform');
    
 
-
   }
 
   get f() {

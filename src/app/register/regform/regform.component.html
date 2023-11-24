@@ -1,4 +1,5 @@
-<div>
+<div class="main">
+<div class="login">
     <form [formGroup]="userForm" (submit)="save()">
         <div class="fdiv">
             <label class="flabel" for="">نام:</label>
@@ -72,4 +73,5 @@
 
         <p-button type="submit" [disabled]="userForm.invalid">ذخیره</p-button>
     </form>
+</div>
 </div>

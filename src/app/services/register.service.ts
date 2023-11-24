@@ -6,10 +6,10 @@ import { users } from 'src/app/models/users';
   providedIn: 'root'
 })
 export class RegisterService {
-  public regUsers$!: Observable<users[]>;
+  public regUsers$!: Observable<users>;
   public users: users[] = [];
   constructor() { }
-  getAll(): Observable<users[]> {
+  getAll(): Observable<users> {
     return this.regUsers$;
   }
   //   addUser(a:Observable<users[]>):Observable<users[]>{
@@ -17,7 +17,7 @@ export class RegisterService {
 
   //     return this.regUsers$;
   //   }
-  addUser(a: any): Observable<users[]> {
+  addUser(a: any): Observable<users> {
     this.users.push(a);
     this.regUsers$ = of(a);
     return this.regUsers$;

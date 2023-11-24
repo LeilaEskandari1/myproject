@@ -4,3 +4,31 @@
 
 @import 'ag-grid-community/styles/ag-grid.css';
 @import 'ag-grid-community/styles/ag-theme-alpine.css';
+@font-face {
+	font-family: 'Yekan';
+	src:	url('./assets/fonts/Yekan.eot'); /* IE9 Compat Modes */
+	src:	url('./assets/fonts/Yekan.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('./assets/fonts/Yekan.woff2') format('woff2'), /* Modern Browsers */
+			url('./assets/fonts/Yekan.woff') format('woff'), /* Modern Browsers */
+			url('./assets/fonts/Yekan.otf') format('opentype'), /* Open Type Font */	
+			url('./assets/fonts/Yekan.ttf') format('truetype'); /* Safari, Android, iOS */
+	font-weight: normal;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	font-display: auto;
+}
+
+    
+.ag-theme-alpine {
+    --ag-header-height: 40px;
+    --ag-header-foreground-color: white;
+    --ag-header-background-color: black;
+    --ag-header-cell-hover-background-color: rgb(80, 40, 140);
+    --ag-header-cell-moving-background-color: rgb(80, 40, 140);
+     /* disable all borders */
+     --ag-borders: none;
+     /* then add back a border between rows */
+     --ag-row-border-style: dashed;
+     --ag-row-border-width: 5px;
+     --ag-row-border-color: rgb(150, 150, 200);
+}
