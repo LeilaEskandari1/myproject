@@ -1,0 +1,25 @@
+<p>users works!</p>
+
+<p-sidebar [(visible)]="display">
+
+    <form action="">
+        <label for="">GENDER</label>
+        <input type="checkbox" name="" id="male">
+        <label for="male">male</label>
+        <input type="checkbox" name="" id="female">
+        <label for="female">female</label>
+        <input type="checkbox" name="" id="other">
+        <label for="other">other</label>
+        <div>
+            <label for="">age</label>
+            <input type="number" name="" id="">
+            <select>
+                <option value="equla">equal</option>
+                <option value="greater">greater</option>
+                <option value="smaller">smaller</option>
+            </select>
+        </div>
+    </form>
+</p-sidebar>
+
+<p-button type="text" (click)="display = true" icon="pi pi-plus" label="Show"></p-button>

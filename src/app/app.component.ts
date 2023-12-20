@@ -17,4 +17,7 @@ export class AppComponent  {
   {
     this.router.navigateByUrl('/summery/summeryform');
   }
+  show(){
+    this.router.navigateByUrl('/users/users');
+  }
 }
